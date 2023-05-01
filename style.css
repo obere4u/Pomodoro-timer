@@ -40,7 +40,7 @@
     font-size: 2rem;
 }
 
-.pomodoro_buttons_start, .pomodoro_buttons_stop, .pomodoro_buttons_reset {
+.pomodoro_buttons__start, .pomodoro_buttons__stop, .pomodoro_buttons__reset {
     border: none;
     border-radius: 5px;
     
@@ -52,25 +52,25 @@
     transition:  opacity 300ms ease-in-out;
 }
 
-.pomodoro_buttons_start:hover, .pomodoro_buttons_stop:hover, .pomodoro_buttons_reset:hover {
+.pomodoro_buttons__start:hover, .pomodoro_buttons__stop:hover, .pomodoro_buttons__reset:hover {
     opacity: 0.8;
 }
 
-.pomodoro_buttons_start, .pomodoro_buttons_stop {
+.pomodoro_buttons__start, .pomodoro_buttons__stop {
     margin-right: 0.3em;
 }
 
-.pomodoro_buttons_start {
+.pomodoro_buttons__start {
     background-color: #046b04;
     color: #ffffff;
 }
 
-.pomodoro_buttons_stop {
+.pomodoro_buttons__stop {
     background-color: #6b0404;
     color: #ffffff;
 }
 
-.pomodoro_buttons_reset {
+.pomodoro_buttons__reset {
     background-color: #616b04;
     color: #ffffff;
 }
