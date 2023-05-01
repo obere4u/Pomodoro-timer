@@ -1,0 +1,76 @@
+:root {
+  --step--2: clamp(1.39rem, calc(0.22rem + 5.83vw), 1.68rem);
+  --step--1: clamp(1.67rem, calc(-0.07rem + 8.66vw), 2.10rem);
+  --step-0: clamp(2.00rem, calc(-0.50rem + 12.50vw), 2.63rem);
+  --step-1: clamp(2.40rem, calc(-1.13rem + 17.63vw), 3.28rem);
+  --step-2: clamp(2.88rem, calc(-2.01rem + 24.44vw), 4.10rem);
+  --step-3: clamp(3.46rem, calc(-3.23rem + 33.41vw), 5.13rem);
+  --step-4: clamp(4.15rem, calc(-4.90rem + 45.23vw), 6.41rem);
+  --step-5: clamp(4.98rem, calc(-7.16rem + 60.67vw), 8.01rem);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pomodoro {
+    width: min(500px, 70%);
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 8em;
+    padding: 5em 0;
+
+    background: rgba(0, 0, 0, 0.062);
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.8);
+    
+}
+
+.pomodoro_title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: var(--step-0)
+}
+
+.pomodoro_timer {
+    font-family: 'Roboto', sans-serif;
+    margin: 1em 0;
+    font-size: 2rem;
+}
+
+.pomodoro_buttons_start, .pomodoro_buttons_stop, .pomodoro_buttons_reset {
+    border: none;
+    border-radius: 5px;
+    
+    font-size: clamp(1.1rem, calc(0.22rem + 3.83vw), 0.1rem);
+    letter-spacing: 1.5px;
+    padding: 0.5em 1em;
+
+    cursor: pointer;
+    transition:  opacity 300ms ease-in-out;
+}
+
+.pomodoro_buttons_start:hover, .pomodoro_buttons_stop:hover, .pomodoro_buttons_reset:hover {
+    opacity: 0.8;
+}
+
+.pomodoro_buttons_start, .pomodoro_buttons_stop {
+    margin-right: 0.3em;
+}
+
+.pomodoro_buttons_start {
+    background-color: #046b04;
+    color: #ffffff;
+}
+
+.pomodoro_buttons_stop {
+    background-color: #6b0404;
+    color: #ffffff;
+}
+
+.pomodoro_buttons_reset {
+    background-color: #616b04;
+    color: #ffffff;
+}
